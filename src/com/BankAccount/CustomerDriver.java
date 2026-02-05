@@ -8,7 +8,7 @@ public class CustomerDriver {
 
         Scanner sc = new Scanner(System.in);
 
-        // -------------creating customer -----------
+        
         System.out.println("Create New Account");
 
         System.out.print("Enter Customer ID: ");
