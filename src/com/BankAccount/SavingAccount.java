@@ -20,15 +20,19 @@ public class SavingAccount extends Account{
 
 	@Override
 	
-	void withdraw(int withdrawAmmount) {
-	    if (withdrawAmmount > balance) {
-	        System.out.println("Insufficient balance");
-	    } else {
-	        balance -= withdrawAmmount;
-	        System.out.println("Withdrawal successful.");
-	        System.out.println("Current balance: " + balance);
-	    }
+	void withdraw(int withdrawAmmount) throws MinimumAmmount {
+		
+			
+			if (withdrawAmmount-2000 < balance) {
+				throw new MinimumAmmount("minimum ammount should not be less then 2000");
+		}
+			else {
+		        balance -= withdrawAmmount;
+		        System.out.println("Withdrawal successful.");
+		        System.out.println("Current balance: " + balance);
+		    }
+	    } 
 	}
 
 
-}
+

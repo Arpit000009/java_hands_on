@@ -12,6 +12,6 @@ public abstract class Account {
 		this.balance = balance;
 	}
 	abstract void deposit(int depositAmmount);
-	abstract void withdraw(int withdrawAmmount);
+	abstract void withdraw(int withdrawAmmount) throws MinimumAmmount;
 	
 }

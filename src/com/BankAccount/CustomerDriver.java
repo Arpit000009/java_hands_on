@@ -53,7 +53,12 @@ public class CustomerDriver {
                 case 2:
                     System.out.print("Enter withdraw amount: ");
                     int withdrawAmount = sc.nextInt();
-                    account.withdraw(withdrawAmount);
+				try {
+					account.withdraw(withdrawAmount);
+				} catch (MinimumAmmount e) {
+					
+					System.out.println(e.getMessage());
+				}
                     break;
 
                 case 3:
