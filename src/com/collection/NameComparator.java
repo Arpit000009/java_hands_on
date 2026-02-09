@@ -2,7 +2,7 @@ package com.collection;
 
 import java.util.Comparator;
 
-public class nameComparator implements Comparator<Student>{
+public class NameComparator implements Comparator<Student>{
 
 	@Override
 	public int compare(Student o1, Student o2) {
