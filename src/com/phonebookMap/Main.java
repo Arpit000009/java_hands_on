@@ -17,7 +17,7 @@ public class Main {
             System.out.print("Choose an option: ");
 
             int choice = sc.nextInt();
-            sc.nextLine(); // consume newline
+            sc.nextLine(); 
 
             switch (choice) {
                 case 1:
@@ -25,7 +25,10 @@ public class Main {
                     String name = sc.nextLine();
                     System.out.print("Enter phone number: ");
                     String phone = sc.nextLine();
-                    phoneBook.addContact(name, phone);
+                    System.out.print("Enter email: ");
+                    String email = sc.nextLine();
+                    Identity identity = new Identity(name, email);
+                    phoneBook.addContact(phone, identity);
                     break;
 
                 case 2:
