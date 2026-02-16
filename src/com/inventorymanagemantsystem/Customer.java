@@ -2,11 +2,11 @@ package com.inventorymanagemantsystem;
 
 public class Customer implements Runnable{
 	int quantity;
-	static Inventory inventory = new Inventory(10);
+	Inventory inventory;
 	
 	
-	public Customer(int quantity) {
-//		this.inventory = inventory;
+	public Customer(int quantity,Inventory inventory) {
+		this.inventory = inventory;
 		this.quantity = quantity;
 	}
 	@Override

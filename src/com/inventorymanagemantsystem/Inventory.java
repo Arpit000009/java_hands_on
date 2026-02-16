@@ -10,7 +10,7 @@ public class Inventory {
 	
 	synchronized void purchase(int quantity) {
 		
-		System.out.println("quaantity required: "+ quantity);
+		System.out.println("quantity required: "+ quantity);
 		if(stock<quantity) {
 			System.out.println("not enough stocks");
 		}
