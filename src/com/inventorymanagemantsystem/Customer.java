@@ -11,7 +11,7 @@ public class Customer implements Runnable{
 	}
 	@Override
 	public void run() {
-		
+		 
 		inventory.purchase(quantity);
 		
 	}
